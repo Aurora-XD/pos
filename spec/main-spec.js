@@ -1,4 +1,4 @@
-const printInventory = require('../main/main');
+const mainModule = require('../main/main');
 
 describe('pos', function () {
     var inputs;
@@ -21,7 +21,7 @@ describe('pos', function () {
 
         spyOn(console, 'log');
 
-        printInventory(inputs);
+        mainModule.printInventory(inputs);
 
         var expectText =
             '***<没钱赚商店>购物清单***\n' +
